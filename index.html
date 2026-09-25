@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <header>
+    <img src="imagens/logo.png" alt="Reis dos Importados" class="logo-img">
+    <title>Reis dos Importados</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>REIS DOS IMPORTADOS</h1>
+
+    <p>
+        Perfumes, body splash, hidratantes, skincare e maquiagens importadas.
+        Produtos vindos do Paraguai, EUA, Argentina e países árabes.
+    </p>
+    <a href="#carrinho" class="link-carrinho">Ver carrinho 🛒</a>
+</header>
+
+<section class="controles">
+    <button id="botaoLoja" onclick="alternarLoja()">Fechar loja (simular)</button>
+
+    <input
+        type="text"
+        id="pesquisa"
+        placeholder="Pesquisar produto"
+    >
+
+    <select id="categoria">
+        <option value="Todos">Todas Categorias</option>
+        <option value="Perfume">Perfumes </option>
+        <option value="Body Splash">Body Splash e hidratantes</option>
+        <option value="Skincare">Skincare</option>
+        <option value="Cabelo">Cabelo</option>
+    </select>
+
+</section>
+
+<section class="produtos" id="produtos"></section>
+
+<section id="carrinho">
+
+    <h2>🛒 Carrinho</h2>
+
+    <div id="itensCarrinho"></div>
+
+    <div class="resumo">
+
+        <p>
+            <strong>Itens:</strong>
+            <span id="totalItens">0</span>
+        </p>
+
+        <p>
+            <strong>Subtotal:</strong>
+            R$ <span id="subtotal">0.00</span>
+        </p>
+
+        <p>
+            <strong>Desconto:</strong>
+            R$ <span id="desconto">0.00</span>
+        </p>
+
+        <p>
+            <strong>Total:</strong>
+            R$ <span id="total">0.00</span>
+        </p>
+
+        <button
+            class="finalizar"
+            onclick="finalizarCompra()"
+        >
+            Finalizar Compra
+        </button>
+
+    </div>
+
+</section>
+
+<footer>
+    Reis dos Importados © 2026
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

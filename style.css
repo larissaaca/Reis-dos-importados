@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #222;
+}
+
+header {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    color: #d4af37;
+    margin-bottom: 10px;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+header p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+.logo-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    background: white;
+}
+
+.link-carrinho {
+    display: inline-block;
+    margin-top: 12px;
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #d4af37;
+    padding: 6px 14px;
+    border-radius: 20px;
+}
+
+.link-carrinho:hover {
+    background: #d4af37;
+    color: black;
+}
+
+.controles {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 20px;
+    background: white;
+}
+
+input,
+select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+input {
+    width: 300px;
+}
+
+select {
+    width: 220px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .15);
+    transition: .2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 19px;
+    color: #222
+}
+
+.categoria-produto {
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.preco {
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.disponivel {
+    color: green;
+    font-weight: bold;
+}
+
+.indisponivel {
+    color: red;
+    font-weight: bold;
+}
+
+.btn {
+    width: 100%;
+    border: none;
+    background: #111;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background: #d4af37;
+    color: black;
+}
+
+.btn:disabled {
+    background: #999;
+    color: white;
+    cursor: not-allowed;
+}
+
+#carrinho {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .15);
+    color: #222;
+}
+
+#carrinho h2 {
+    margin-bottom: 15px;
+}
+
+.itemCarrinho {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.itemCarrinho strong {
+    font-size: 17px;
+}
+
+.itemCarrinho button {
+    margin: 8px 3px 3px 0;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    background: #eee;
+    border-radius: 5px;
+}
+
+.itemCarrinho button:hover {
+    background: #d4af37;
+}
+
+.resumo {
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+.resumo p {
+    margin: 4px 0;
+}
+
+.finalizar {
+    background: green;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.finalizar:hover {
+    background: #075c07;
+}
+
+.sem-produto {
+    text-align: center;
+    padding: 30px;
+    color: #777;
+    grid-column: 1 / -1;
+}
+
+footer {
+    text-align: center;
+    background: #111;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    input,
+    select {
+        width: 90%;
+    }
+
+    .produtos {
+        grid-template-columns: 1fr;
+    }
+
+    #carrinho {
+        margin: 10px;
+    }
+}
